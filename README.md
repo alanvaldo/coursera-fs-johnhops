@@ -1,1 +1,1 @@
-# coursera-fs-johnhops
+# fs-johnhopkins
