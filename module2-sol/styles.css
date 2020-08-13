@@ -1,22 +1,96 @@
-h1{
-	font-weight: bold;
-	font-size: 24px;
-	text-align: center;
-}
+/***** Base Styles *****/
 
-.box{
-	background-color: gray;
-	padding: 10px 10px 10px 10px;
-	border: 1px solid black;
-	width: 300px; 
+/* The star means that the rules will apply to all the 
+elements */
+* {
+	margin: 0;
+	padding: 0;
 	/* This declaration allows us to size the width of our
 	boxes beginning from the outside edge of the border. If 
 	this declaration wasn't used, the box would be measured
 	in terms of the width of the content */
 	box-sizing: border-box;
-	/* With this declaration, we're making the block element 
-	to float to the left of its container */
-	float: left;
-	margin-right: 10px;
 }
+body{
+	padding: 10px;
+}
+h1 {
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+h2 {
+	text-align: right;
+	padding-top: 10px;
+}
+span{
+	padding: 10px;
+	border: 1px solid black;
+	border-right: 0;
+}
+#span1 {
+	background-color: red;
+}
+#span2 {
+	background-color: green;
+}
+#span3 {
+	background-color: yellow;
+}
+div {
+	background-color: gray;
+	border: 1px solid black;
+	/* With this declaration, we're making the block element to float to the left of its container */
+	float: left;
+	/* I'm trying to apply margins to my divs (boxes) so they are separated from each other as it 
+	should be, but then, the media queries don't work */
+}
+p {
+	margin: 10px;
+	margin-top: 20px;
+}
+
+/***** Large devides *****/
+
+@media (min-width: 992px) {
+	div {
+		width: 32%; 
+	}
+	#box1{
+		margin-right: 2%;
+	}
+	#box3{
+		margin-left: 2%;
+	}
+}
+
+/***** Medium devices *****/
+
+@media (min-width: 768px) and (max-width: 991px){
+	div {
+		width: 49%;
+	}
+	#box1{
+		margin-right: 2%;
+	}
+	#box3 {
+		width: 100%;
+		margin-top: 2%;
+	}
+}
+
+/***** Small devices *****/
+
+@media (max-width: 767px){
+	div{
+		width: 100%;
+		margin-top: 2%;
+	}
+	#box1{
+		margin-top: 0;
+	}
+}
+
+
 
