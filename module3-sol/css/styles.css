@@ -1,0 +1,55 @@
+body {
+	font-size: 16px;
+	color: black;
+}
+
+#header-nav {
+	background-color: gray;
+	border-radius: 0;
+	border: 0;
+}
+
+.navbar-brand h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.5em;
+	color: white;
+}
+
+#nav-list {
+	margin-top: 0;
+	margin-bottom: 0;
+	background: #C0C0C0;
+}
+
+#nav-list a {
+	color: white;
+	text-align: center;
+}
+
+#nav-list li {
+	border-top: 2px solid black;
+}
+
+#nav-list a:hover {
+	background: #E7E7E7;
+}
+
+#topic {
+	margin-top: 0;
+	font-size: 2em;
+
+}
+
+#main-content {
+	background-color: gray;
+	height: 1000px;
+	margin: 20px;
+	padding: 20px;
+}
+
+.menu-h3{
+	margin-top: 60px;
+}
+
+
